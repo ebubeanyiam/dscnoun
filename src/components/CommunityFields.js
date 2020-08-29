@@ -17,7 +17,7 @@ const CommunityFields = () => {
       <div className={styles.communityFieldsContainer}>
         {Fields.map((field) => {
           return (
-            <div className={styles.field}>
+            <div className={styles.field} key={field.id}>
               <div className={styles.fieldNameContainer}>
                 <p>{field.fieldName}</p>
               </div>
