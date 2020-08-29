@@ -24,6 +24,17 @@
   font-size: 14px;
   font-weight: 600;
 }
+.userThumbnail {
+  display: flex;
+  align-items: center;
+}
+.userThumbnail img {
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 @media screen and (max-width: 915px) {
   .sidebarToggle {
     display: block;
@@ -39,7 +50,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 575px) {
   .lightHorizontalLogo {
     width: 250px;
   }
@@ -48,6 +59,9 @@
     margin-right: 10px;
   }
   .signupLoginAuth {
+    display: none;
+  }
+  .userThumbnail {
     display: none;
   }
 }
