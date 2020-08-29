@@ -10,11 +10,11 @@
   border-bottom: 1px solid #e4e4e4;
   z-index: 2;
 }
+.sidebarToggle {
+  display: none;
+}
 .lightHorizontalLogo {
   width: 350px;
-}
-.darkHorizontalLogo {
-  display: none;
 }
 .siteNavWrapper {
   flex: 1;
@@ -23,4 +23,31 @@
   padding: 0 18px;
   font-size: 14px;
   font-weight: 600;
+}
+@media screen and (max-width: 915px) {
+  .sidebarToggle {
+    display: block;
+  }
+  .sidebarToggle > * {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .logo {
+    flex: 1;
+  }
+  .siteNavWrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .lightHorizontalLogo {
+    width: 250px;
+  }
+  .sidebarToggle > * {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  .signupLoginAuth {
+    display: none;
+  }
 }

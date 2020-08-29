@@ -38,3 +38,8 @@ button {
   font-weight: 600;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 650px) {
+  .disclaimer p {
+    font-size: 11px;
+  }
+}

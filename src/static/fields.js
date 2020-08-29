@@ -10,7 +10,7 @@ import artificialIntelligenceIcon from "../assets/icons/artificial-intelligence.
 const Fields = [
   {
     id: 1,
-    fieldName: "Software Development",
+    fieldName: "Software",
     fieldImage: softwareIcon,
   },
   {

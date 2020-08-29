@@ -14,6 +14,7 @@ ul {
 }
 .footerLinkItem {
   flex: 1;
+  margin-right: 5px;
 }
 .footerLinkItem h3 {
   font-size: 17px;
@@ -32,7 +33,7 @@ ul {
   padding-bottom: 15px;
 }
 .footerLogo img {
-  width: 500px;
+  max-width: 500px;
 }
 .bottomFooter {
   margin-top: 20px;
@@ -47,4 +48,35 @@ ul {
 }
 .bottomFooter section > * {
   margin-right: 15px;
+}
+@media screen and (max-width: 750px) {
+  .bottomFooter {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  }
+  .bottomFooter section {
+    margin-bottom: 15px;
+  }
+  .newsletter {
+    flex-direction: column;
+    align-items: unset !important;
+  }
+  .newsletter p {
+    margin-bottom: 10px;
+  }
+  .newsletter button {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footerLinks {
+    flex-direction: column;
+  }
+  .footerLinkItem {
+    margin-bottom: 20px;
+  }
+  .footerLogo img {
+    max-width: 90%;
+  }
 }

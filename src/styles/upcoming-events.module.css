@@ -17,3 +17,19 @@
   font-size: 15px;
   line-height: 30px;
 }
+
+@media screen and (max-width: 550px) {
+  .eventImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .eventImage {
+    max-width: 90%;
+  }
+  .eventDescContainer {
+    padding: 0 10px;
+  }
+  .eventDescContainer p {
+    font-size: 13px;
+  }
+}

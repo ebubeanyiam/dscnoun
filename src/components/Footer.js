@@ -51,7 +51,7 @@ const Footer = () => {
           <Link to="">Privacy</Link>
         </section>
 
-        <section>
+        <section className={styles.newsletter}>
           <p>Sign up for the Developers Student Club newsletter</p>
           <button>Subscribe</button>
         </section>
