@@ -15,7 +15,14 @@ a {
   color: inherit;
 }
 button {
-  font-family: "Open Sans";
+  font-weight: 500;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: #fff;
+  background: #1a73e8;
+  padding: 7.5px 20px;
+  border: 1px solid #fff;
+  border-radius: 4px;
 }
 .disclaimer {
   text-align: center;

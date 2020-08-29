@@ -1,13 +1,14 @@
 import React from "react";
 import Disclaimer from "./Disclaimer";
 import UpcomingEvents from "./UpcomingEvents";
+import CommunityFields from "./CommunityFields";
 
 const HomePage = () => {
   return (
     <div>
       <Disclaimer />
       <UpcomingEvents />
-      <h1>Hello World</h1>
+      <CommunityFields />
     </div>
   );
 };

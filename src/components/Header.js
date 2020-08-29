@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import lightHorizontalLogo from "../assets/images/DSC National Open University Of Nigeria Light Horizontal-Logo.png";
 import darkHorizontalLogo from "../assets/images/DSC National Open University Of Nigeria Dark Horizontal-Logo.png";

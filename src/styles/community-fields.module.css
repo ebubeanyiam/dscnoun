@@ -1,0 +1,33 @@
+.communityFields {
+  padding: 40px 0;
+}
+.communityFieldsTitleText {
+  margin-bottom: 50px;
+}
+.communityFieldsTitleText h1 {
+  text-align: center;
+  font-weight: 200;
+}
+.communityFieldsTitleText h1 span {
+  font-weight: 900;
+}
+.communityFieldsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.field {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.field img {
+  margin-bottom: 20px;
+  width: 50px;
+}
+.ctaContainer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
