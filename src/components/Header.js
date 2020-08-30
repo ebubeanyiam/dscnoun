@@ -24,10 +24,18 @@ const Header = ({ user, setNavOpen, googleLogin, LogOut }) => {
         />
       </div>
       <div className={styles.siteNavWrapper}>
-        <NavLink to="/products">Products</NavLink>
-        <NavLink to="/events">Events</NavLink>
-        <NavLink to="/communities">Communities</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/products" activeClassName={styles.active}>
+          Products
+        </NavLink>
+        <NavLink to="/events" activeClassName={styles.active}>
+          Events
+        </NavLink>
+        <NavLink to="/community" activeClassName={styles.active}>
+          Communities
+        </NavLink>
+        <NavLink to="/blog" activeClassName={styles.active}>
+          Blog
+        </NavLink>
       </div>
 
       <div className={styles.signupLoginAuth}>

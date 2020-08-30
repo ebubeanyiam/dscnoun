@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import Sidebar from "./components/Sidebar";
 
+import Community from "./components/community/Community";
+
 import { auth, db, provider, timestamp } from "./firebase/config";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -17,8 +19,7 @@ const App = () => {
     auth
       .signInWithPopup(provider)
       .then((res) => {
-        const userRef = db.collection("users").doc(res.user.uid);
-        if (userRef) {
+        if (res.additionalUserInfo.isNewUser) {
           db.collection("users").doc(res.user.uid).set({
             name: res.user.displayName,
             photoUrl: res.user.photoURL,
@@ -64,7 +65,8 @@ const App = () => {
           LogOut={LogOut}
         />
         <Switch>
-          <Route path="/" component={HomePage} />
+          <Route path="/" exact component={HomePage} />
+          <Route path="/community" component={Community} />
         </Switch>
         <Footer />
       </div>

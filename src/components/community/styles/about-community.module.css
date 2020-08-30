@@ -1,0 +1,38 @@
+.landing {
+  padding: 40px 24px;
+  display: flex;
+}
+.landing > * {
+  width: 50%;
+}
+.landingText {
+  margin-right: 30px;
+}
+.landingText > * {
+  margin-bottom: 20px;
+}
+.landingText h1 {
+  font-family: "Open Sans";
+  color: #1a73e8;
+}
+.landingText h4 {
+  font-weight: 300px;
+  font-family: "Open Sans";
+}
+.landingText h4 span {
+  color: #1a73e8;
+}
+.landingText p {
+  line-height: 30px;
+  font-weight: 500;
+}
+.landingText section button:nth-child(2) {
+  border: 1px solid #e4e4e4;
+  color: #1a73e8;
+  background: #fff;
+  margin-left: 20px;
+}
+.landingImage img {
+  max-width: 100%;
+  height: auto;
+}

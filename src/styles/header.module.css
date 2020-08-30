@@ -2,13 +2,29 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 65px;
+  height: 60px;
   padding: 0 24px;
   display: flex;
   align-items: center;
   background: #fff;
   border-bottom: 1px solid #e4e4e4;
   z-index: 2;
+}
+.active {
+  position: relative;
+}
+.active::after {
+  display: block;
+  content: "";
+  width: 60%;
+  height: 3px;
+  background: #222;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .sidebarToggle {
   display: none;
@@ -18,9 +34,15 @@
   width: 350px;
 }
 .siteNavWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
   flex: 1;
 }
 .siteNavWrapper a {
+  display: flex;
+  align-items: center;
+  height: 100%;
   padding: 0 18px;
   font-size: 14px;
   font-weight: 600;
