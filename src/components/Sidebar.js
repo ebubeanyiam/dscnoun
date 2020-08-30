@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import styles from "../styles/sidebar.module.css";
 import lightHorizontalLogo from "../assets/images/DSC National Open University Of Nigeria Light Horizontal-Logo.png";
 
-const Sidebar = ({ user, navOpen, setNavOpen }) => {
+const Sidebar = ({ user, navOpen, setNavOpen, googleLogin, LogOut }) => {
   if (!navOpen) {
     return null;
   } else {
@@ -49,7 +49,11 @@ const Sidebar = ({ user, navOpen, setNavOpen }) => {
           </div>
 
           <div className={styles.userAuth}>
-            {user ? <button>Logout</button> : <button>Login</button>}
+            {user ? (
+              <button onClick={LogOut}>Logout</button>
+            ) : (
+              <button onClick={googleLogin}>Login</button>
+            )}
             {user && <img src={user.photoURL} alt="User thumbnail" />}
           </div>
         </div>
