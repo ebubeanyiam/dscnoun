@@ -6,7 +6,7 @@ import { auth, db, provider } from "../firebase/config";
 import lightHorizontalLogo from "../assets/images/DSC National Open University Of Nigeria Light Horizontal-Logo.png";
 import styles from "../styles/header.module.css";
 
-const Header = ({ user }) => {
+const Header = ({ user, setNavOpen }) => {
   const googleLogin = () => {
     auth
       .signInWithPopup(provider)
@@ -34,7 +34,12 @@ const Header = ({ user }) => {
 
   return (
     <nav className={styles.header}>
-      <div className={styles.sidebarToggle}>
+      <div
+        className={styles.sidebarToggle}
+        onClick={() => {
+          setNavOpen(true);
+        }}
+      >
         <MdDehaze />
       </div>
       <div className={styles.logo}>

@@ -12,6 +12,7 @@
 }
 .sidebarToggle {
   display: none;
+  cursor: pointer;
 }
 .lightHorizontalLogo {
   width: 350px;
