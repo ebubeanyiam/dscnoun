@@ -12,12 +12,13 @@
   margin-bottom: 20px;
 }
 .landingText h1 {
-  font-family: "Open Sans";
+  font-weight: 100;
+  font-family: "GoogleSans";
   color: #1a73e8;
 }
 .landingText h4 {
-  font-weight: 300px;
-  font-family: "Open Sans";
+  font-weight: 300;
+  font-family: "GoogleSans";
 }
 .landingText h4 span {
   color: #1a73e8;

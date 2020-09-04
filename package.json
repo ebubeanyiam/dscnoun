@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sendgrid/mail": "^7.2.4",
     "dom": "0.0.3",
     "firebase": "^7.19.1",
     "react": "^16.11.0",

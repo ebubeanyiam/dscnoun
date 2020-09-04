@@ -26,6 +26,13 @@ const App = () => {
             email: res.user.email,
             joined: timestamp(),
           });
+          fetch(
+            `https://dsc-welcome-mail.herokuapp.com/?name=${res.user.displayName}&email=${res.user.email}`,
+            {
+              method: "POST",
+              mode: "no-cors",
+            }
+          );
         }
         localStorage.setItem("userID", res.user.uid);
         localStorage.setItem("userphotoUrl", res.user.photoURL);

@@ -11,6 +11,10 @@
   height: 100%;
   padding: 0 18px;
   font-size: 13px;
+  color: grey;
+  font-family: "GoogleSans";
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .active {
   position: relative;
